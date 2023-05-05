@@ -9,5 +9,5 @@ const movieSchema ={
     showtimes:[String],
 
 }
-const Pokemon = mongoose.model("Movie",movieSchema)
-module.exports=Pokemon
+const Movie = mongoose.model("Movie",movieSchema)
+module.exports=Movie
