@@ -18,4 +18,17 @@ router.get("/movies", (req, res, next) => {
  
 });
 
+
+//* GET ruta de detalles de movies /movie/:id
+router.get("/movie/:id",(req,res,next)=>{
+    Movie.findById(req.params.id)
+    .then((oneMovie)=>{
+        console.log(oneMovie)
+        res.render("movie-details",{oneMovie})
+    })
+    .catch((error)=>{
+        next(error)
+
+    })
+})
 module.exports = router;

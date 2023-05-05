@@ -53,3 +53,17 @@ a {
 .movie{
   text-align: center;
 }
+
+/* MOVIE DETAILS*/
+.movie-details img{
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.movie-details{
+  display: flex;
+  flex-direction: row;
+  gap:50px;
+  width: 45%;
+}
+.showtime-list li{
+  display: inline;
+}
